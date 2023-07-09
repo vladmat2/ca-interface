@@ -1,6 +1,6 @@
 // Renders each sentence of each paragraph in the contract.
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../assets/show-paragraphs.css';
 import contrArray from '../data/contract-array.js';
 import keySentences from '../data/key-sentences.js';
