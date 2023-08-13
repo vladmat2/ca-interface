@@ -1,11 +1,9 @@
 import '@passageidentity/passage-elements/passage-register';
 
-const appID = 'klsgwfaw6pfFTTV0XKrM8UcD';
-
 function Register() {
   return (
       <div>
-        <passage-register app-id={appID}></passage-register>
+        <passage-register app-id={process.env.REACT_APP_PASSAGE_APP_ID}></passage-register>
       </div>
   );
 }
