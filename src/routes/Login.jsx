@@ -1,9 +1,10 @@
-import '@passageidentity/passage-elements/passage-login';
+import { PassageLogin } from '@passageidentity/passage-react';
 
 function Login() {
   return (
+      
       <div>
-        <passage-login app-id={process.env.REACT_APP_PASSAGE_APP_ID}></passage-login>
+        <PassageLogin />
       </div>
   );
 }

@@ -12,7 +12,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PassageProvider appID={process.env.REACT_APP_PASSAGE_APP_ID}>
+    <PassageProvider appId={process.env.REACT_APP_PASSAGE_APP_ID}>
       <App />
     </PassageProvider>
   </React.StrictMode>

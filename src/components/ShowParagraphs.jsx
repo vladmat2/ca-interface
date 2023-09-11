@@ -1,6 +1,7 @@
 // Renders each sentence of each paragraph in the contract.
 
 import React, { useState } from 'react';
+import { PassageAuthGuard } from '@passageidentity/passage-react';
 import '../assets/show-paragraphs.css';
 import contrArray from '../data/contract-array.js';
 import keySentences from '../data/key-sentences.js';
@@ -20,7 +21,7 @@ function ShowParagraphs() {
 
 
     return(
-        
+            <PassageAuthGuard>
             <p className="contrTextBox">{contrArray.map((eachSentence) => { 
                 let senCat = keySentences[eachSentence];
                 let senColor = senColorKeys[senCat];
@@ -69,7 +70,9 @@ launch the modal with info related to that category. Otherwise, just render the 
                 })
             }</p>
     
+    </PassageAuthGuard>
     );  
+    
 }
 
 

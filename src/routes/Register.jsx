@@ -1,9 +1,9 @@
-import '@passageidentity/passage-elements/passage-register';
+import { PassageRegister } from '@passageidentity/passage-react';
 
 function Register() {
   return (
       <div>
-        <passage-register app-id={process.env.REACT_APP_PASSAGE_APP_ID}></passage-register>
+        <PassageRegister />
       </div>
   );
 }
